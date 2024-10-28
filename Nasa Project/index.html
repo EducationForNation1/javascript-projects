@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA PROJECT</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader hidden">
+        <img src="./rocket1.svg" alt="Rocket Loading Animation">
+    </div>
+
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- Results Nav -->
+            <span class="navigation-items" id="resultsNav">
+                <h2 class="clickable">Favorites</h2>
+                <h2>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h2>
+                <h2 class="clickable">Load More</h2>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="FavoritesNav">
+                <h2 class="clickable">Load More NASA Images</h2>
+            </span>
+        </div>
+        <!-- images Container -->
+        <div class="images-container"></div>
+    </div>
+
+    <!-- save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

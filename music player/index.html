@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="./images/music1.jpeg" alt="Album Art">
+        </div>
+        <!-- Title -->
+        <h2 id="title">Love Song</h2>
+        <h3 id="artist">Deepak Kumar</h3>
+        <!-- audio File -->
+        <audio src="./music/music1.mp3" ></audio>
+
+        <!-- progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="process" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">3:45</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="play"></i>
+            <i class="fas fa-forward" id="next" title="next"></i>
+        </div>
+    </div>
+    
+    <!-- javaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
